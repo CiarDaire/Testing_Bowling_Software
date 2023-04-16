@@ -9,7 +9,7 @@ class TestBowlingGame(unittest.TestCase):
         self.game = BowlingGame.BowlingGame()
 
     def testGutterGame(self):
-        for i in range(9, 20):
+        for i in range(0, 20):
             self.game.roll(0)
         assert self.game.score() == 0
 

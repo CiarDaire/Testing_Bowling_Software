@@ -1,4 +1,4 @@
-#This file has information about Bowling Game for which the description is provided in project assessment.
+# #This file has information about Bowling Game for which the description is provided in project assessment.
 
 class BowlingGame:
     def __init__(self):
@@ -11,7 +11,7 @@ class BowlingGame:
         result = 0
         rollIndex=0 
         for frameIndex in range(10):
-            if self.strikeScore(rollIndex):
+            if self.isStrike(rollIndex):
                 result += self.strikeScore(rollIndex)
                 rollIndex +=2
             elif self.isSpare(rollIndex):
@@ -21,6 +21,7 @@ class BowlingGame:
                 result += self.frameScore(rollIndex)
                 rollIndex +=1
         return result
+
 
     def isStrike(self, rollIndex):
         return self.rolls[rollIndex] == 10
