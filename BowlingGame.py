@@ -21,7 +21,7 @@ class BowlingGame:
                 result += self.spareScore(rollIndex)
                 rollIndex +=2
             else:
-                result += self.frameScore(rollIndex)
+                result += self.openFrameScore(rollIndex)
                 rollIndex +=1
         return result
 
@@ -33,10 +33,10 @@ class BowlingGame:
         return self.rolls[rollIndex]+ self.rolls[rollIndex+1]==10
     
     def strikeScore(self, rollIndex):
-        return  10+ self.rolls[rollIndex+1]+ self.rolls[rollIndex+2]
-
+        return 10+ self.rolls[rollIndex+1] + self.rolls[rollIndex+2]
+        
     def spareScore(self, rollIndex):
         return  10+ self.rolls[rollIndex+2]
 
-    def frameScore(self, rollIndex):
+    def openFrameScore(self, rollIndex):
         return self.rolls[rollIndex] + self.rolls[rollIndex + 1]

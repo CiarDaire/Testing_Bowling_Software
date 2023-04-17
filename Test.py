@@ -35,7 +35,7 @@ class TestBowlingGame(unittest.TestCase):
         self.rollMany(10,12)
         assert self.game.score()==300
 
-    def testAnotherSpare(self):
+    def testAllSpares(self):
         self.rollMany(5,21)
         assert self.game.score()==150
         
