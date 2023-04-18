@@ -18,7 +18,7 @@ class TestBowlingGame(unittest.TestCase):
         Args:
             :param rolls: The overall range of rolls that have been made with the specified number of pins knocked in each roll.
             :type: int
-
+            
             :param roll: The number of pins knocked down in each roll.
             :type: int
 
@@ -30,8 +30,7 @@ class TestBowlingGame(unittest.TestCase):
             :raise: 'Unspported operant type(s)' if input type is invalid (e.g., not an int).
 
         """
-        for i in range(0, 20):
-            self.game.roll(0)
+        self.rollMany(0, 20)
         assert self.game.score() == 0
 
     def testAllOnes(self):
