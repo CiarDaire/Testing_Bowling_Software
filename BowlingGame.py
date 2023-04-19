@@ -49,7 +49,7 @@ class BowlingGame:
                 rollIndex +=2
             else:
                 result += self.openFrameScore(rollIndex)
-                rollIndex +=1
+                rollIndex +=2
         return result
 
     def isStrike(self, rollIndex):
