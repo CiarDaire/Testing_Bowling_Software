@@ -80,6 +80,7 @@ class TestBowlingGame(unittest.TestCase):
         self.rollMany(0,17)
         assert self.game.score()==16
 
+
     def testOneStrike(self):
         """
         Tests that a roll of 10 is identified as a strike, and calculates the score accordingly.
@@ -148,7 +149,7 @@ class TestBowlingGame(unittest.TestCase):
         """
         self.rollMany(5,21)
         assert self.game.score()==150
-        
+
     def rollMany(self, pins,rolls):
         """
         Function that knocks down the same number of pins for a specified number of rolls.

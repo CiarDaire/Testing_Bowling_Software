@@ -66,7 +66,6 @@ class BowlingGame:
 
         """
         return self.rolls[rollIndex] == 10
-        print(isStrike.__doc__)
     
     def isSpare(self, rollIndex):
         """

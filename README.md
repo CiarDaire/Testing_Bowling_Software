@@ -1,0 +1,1 @@
+This software is for recreating a Bowling Game simulation. You will need to have Python installed in order for it to run. 
